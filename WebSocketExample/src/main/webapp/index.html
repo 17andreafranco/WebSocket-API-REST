@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <h1>Java Websocket Home</h1>
+            <p>Welcome to the Java WebSocket Home. Click the Exchange actions button to start adding exchanges.</p>
+            <br />
+            <div class="addExchange">
+                <div class="button"> <a href="#">Exchange actions</a> </div>
+                <form class="addExchangeForm">
+                    <h3>Add a new exchange</h3>
+                    <span>Crypto: <input type="text" name="crypto_name" id="crypto_name"></span>
+                    <span>Coin: <input type="text" name="coin_name" id="coin_name"></span>
+
+                    <input id="add_button" type="button" class="button" value="Add">
+                    <input id="cancel_button" type="button" class="button" value="Cancel">
+                    
+                </form>
+            </div>
+            <br />
+            <h3>Currently active exchanges:</h3>
+            <div class="content">
+            </div>
+        </div>
+
+		<script src="websocket.js"></script>
+    </body>
+</html>
